@@ -1,0 +1,12 @@
+<p-menubar [model]="items"></p-menubar>
+
+
+<div class="container">
+  <span *ngFor="let item of items">
+    <a routerLinkActive="active" [routerLink]="item.url">{{item.label}}</a> |
+  </span>
+  <p style="visibility: hidden;">space</p>
+  <router-outlet></router-outlet>
+</div>
+
+<p class="text-center">The source code for this website can be found on <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">My GitHub</a></p>
