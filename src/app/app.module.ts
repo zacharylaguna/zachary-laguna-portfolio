@@ -8,11 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { AcademicsComponent } from './academics/academics.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { ProjectsComponent } from './projects/projects.component';
 
-import {MenubarModule} from 'primeng/menubar';
-import {CardModule} from 'primeng/card';
-import {ButtonModule} from 'primeng/button';
-import {AccordionModule} from 'primeng/accordion';
+import {MenubarModule} from 'primeng-lts/menubar';
+import {CardModule} from 'primeng-lts/card';
+import {ButtonModule} from 'primeng-lts/button';
+import {AccordionModule} from 'primeng-lts/accordion';
+import {ChartModule} from 'primeng-lts/chart'
+import {ProgressBarModule} from 'primeng-lts/progressbar';
+import {TooltipModule} from 'primeng-lts/tooltip';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,8 @@ import {AccordionModule} from 'primeng/accordion';
     HomeComponent,
     AcademicsComponent,
     ExperiencesComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,10 @@ import {AccordionModule} from 'primeng/accordion';
     MenubarModule,
     CardModule,
     ButtonModule,
-    AccordionModule
+    AccordionModule,
+    ChartModule,
+    ProgressBarModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

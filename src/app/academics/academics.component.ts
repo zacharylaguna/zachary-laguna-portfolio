@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcademicsComponent implements OnInit {
 
+  value: number = 99;
+
   constructor() { }
 
   ngOnInit(): void {

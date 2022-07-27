@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'primeng-lts/api';
 
 @Component({
   selector: 'app-root',
