@@ -18,14 +18,14 @@ export class HomeComponent implements OnInit {
   // }
 
   ngOnInit() {
-    $('button').click(function() { // jquery
-        alert('code from GeeksForGeeks; jQuery works on p-button and button bc primeng likely uses stock button');
-        // getpathlength(); /./ already imported with declare function; activate this inside to run on init
-    });
-    $('#jquerytestbutton').click(function() { // jquery
-        alert('this popup only appears on match');
-        // getpathlength(); /./ already imported with declare function; activate this inside to run on init
-    });
+    // $('button').click(function() { // jquery
+    //     alert('code from GeeksForGeeks; jQuery works on p-button and button bc primeng likely uses stock button');
+    //     // getpathlength(); /./ already imported with declare function; activate this inside to run on init
+    // });
+    // $('#jquerytestbutton').click(function() { // jquery
+    //     alert('this popup only appears on match');
+    //     // getpathlength(); /./ already imported with declare function; activate this inside to run on init
+    // });
   }
 
 }

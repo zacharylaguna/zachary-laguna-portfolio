@@ -2,11 +2,13 @@
 
 
 <div class="container">
-  <span *ngFor="let item of items">
+  <!-- <span *ngFor="let item of items">
     <a routerLinkActive="active" [routerLink]="item.url">{{item.label}}</a> |
-  </span>
+  </span> -->
   <p style="visibility: hidden;">space</p>
   <router-outlet></router-outlet>
 </div>
 
-<p class="text-center">The source code for this website can be found on <a href="https://github.com/zacharylaguna/zachary-laguna-portfolio" target="_blank" rel="noopener noreferrer">My GitHub</a></p>
+<div class="fixed">
+  <button pButton (click)="goToGitHub()" type="button" icon="pi pi-github" class="p-button-rounded" style="margin: 10px;"></button>
+</div>

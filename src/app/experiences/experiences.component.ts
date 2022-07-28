@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperiencesComponent implements OnInit {
 
+  fujitsu_swe: any;
   fujitsu_intern: any;
   tamu_teaching: any;
   nvidia_ml: any;
@@ -14,6 +15,28 @@ export class ExperiencesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.fujitsu_swe = {
+      labels: ['Docker', 'Redis', 'Angular (Frontend)', 'Flask (Python)', 'AWS'],
+      datasets: [
+        {
+          data: [50, 20, 10, 10, 10],
+          backgroundColor: [ // https://brandcolors.net/
+            "#0db7ed",
+            "#d82c20",
+            "#b52e31",
+            "#ffde57",
+            "#ff9900"
+          ],
+          hoverBackgroundColor: [ // https://www.w3schools.com/colors/colors_picker.asp
+            "#aadcee", // 80% white
+            "#f2aba6",
+            "#eaaeaf",
+            "#ffeb99",
+            "#ffd699"
+          ]
+        }
+      ]
+    };
     this.fujitsu_intern = {
       labels: ['Angular (Frontend)', 'Flask (Python)', 'Docker'],
       datasets: [

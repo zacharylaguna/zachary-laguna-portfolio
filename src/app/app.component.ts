@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 
 import { MenuItem } from 'primeng-lts/api';
+
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,8 @@ export class AppComponent {
   title = 'portfolio-v2';
 
   items: MenuItem[] = [];
+
+  constructor(@Inject(DOCUMENT) private document: Document){}
 
   ngOnInit() {
     this.items = [
@@ -38,28 +42,10 @@ export class AppComponent {
         url: '/experiences',
         routerLink: '/experiences'
       },
-      // {
-      //   label: 'File',
-      //   items: [{
-      //     label: 'New', 
-      //     icon: 'pi pi-fw pi-plus',
-      //     items: [
-      //       {label: 'Project'},
-      //       {label: 'Other'},
-      //       ]
-      //     },
-      //     {label: 'Open'},
-      //     {label: 'Quit'}
-      //   ]
-      // },
-      // {
-      //   label: 'Edit',
-      //   icon: 'pi pi-fw pi-pencil',
-      //   items: [
-      //     {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-      //     {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-      //   ]
-      // }
     ];
+  }
+
+  goToGitHub() {
+    this.document.location.href = 'https://github.com/zacharylaguna';
   }
 }
