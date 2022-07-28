@@ -42,6 +42,12 @@ export class AppComponent {
         url: '/experiences',
         routerLink: '/experiences'
       },
+      {
+        label: 'Projects',
+        icon: 'pi pi-fw pi-star',
+        url: '/projects',
+        routerLink: '/projects'
+      },
     ];
   }
 
