@@ -7,9 +7,20 @@
             <ng-template pTemplate="header">
                 <img alt="Card" src="assets/music-note.png" style="max-width:60%; width:100%;" class="center">
             </ng-template>
-            <p> Do you have a song stuck in your head? One where the name is at the tip of your tongue? Find it using this lyric tool!</p>
+            <p> Do you have a song stuck in your head? One where the name is at the tip of your tongue? Find it using this lyric tool! (uses an outdated dataset)</p>
             <ng-template pTemplate="footer">
-                <button pButton (click)="goToLyric()" type="button" label="Learn More" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLyric()" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
+            </ng-template>
+        </p-card>
+    </div>
+    <div class="col center-card">
+        <p-card header="Baby AI Monitor" subheader="Spring 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/baby-ai-monitor.png" style="max-width:60%; width:100%;" class="center">
+            </ng-template>
+            <p> Monitor your baby from any device! Get real time updates in and make sure your baby is safe from anywhere in the world. </p>
+            <ng-template pTemplate="footer">
+                <button pButton (click)="goToBaby()" type="button" label="Read More" icon="pi pi-angle-right"></button>
             </ng-template>
         </p-card>
     </div>

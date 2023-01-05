@@ -18,4 +18,8 @@ export class ProjectsComponent implements OnInit {
     this.document.location.href = 'http://3.20.71.118:5000/';
   }
 
+  goToBaby() {
+    this.document.location.href = 'https://drive.google.com/drive/folders/11k6lYF7ScDIxzzvbVaWI3ZNNwwv0Py6N?usp=sharing';
+  }
+
 }
