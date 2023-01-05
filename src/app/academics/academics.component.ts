@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcademicsComponent implements OnInit {
 
-  value: number = 99;
+  value: number = 100;
 
   constructor() { }
 

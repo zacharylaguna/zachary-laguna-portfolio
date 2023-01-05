@@ -15,7 +15,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   goToLyric() {
-    this.document.location.href = 'http://lyricretriever-env.eba-ftppkhi3.us-east-2.elasticbeanstalk.com/';
+    this.document.location.href = 'http://3.20.71.118:5000/';
   }
 
 }
