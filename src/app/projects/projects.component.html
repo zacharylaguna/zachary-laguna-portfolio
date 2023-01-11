@@ -7,18 +7,89 @@
             <ng-template pTemplate="header">
                 <img alt="Card" src="assets/music-note.png" style="max-width:60%; width:100%;" class="center">
             </ng-template>
-            <p> Do you have a song stuck in your head? One where the name is at the tip of your tongue? Find it using this lyric tool! (uses an outdated dataset)</p>
+            <p> Do you have a song stuck in your head? One where the name is at the tip of your tongue? Find it using this lyric tool! Type the most prominent lyrics within a song and find the title (uses an outdated dataset)</p>
+            <p-accordion>
+                <p-accordionTab header="Example Inputs">
+                    <ul>
+                        <li>in my heart</li>
+                        <li>single ladies</li>
+                        <li>so sad the renegade elton john</li>
+                        <li>renegade eminem</li>
+                    </ul>
+                </p-accordionTab>
+                <p-accordionTab header="Tags">
+                    <ul>
+                        <li>Flask</li>
+                        <li>BM25 Scoring Algorithm</li>
+                        <li>Python</li>
+                        <li>Hosted on AWS</li>
+                    </ul>
+                </p-accordionTab>
+            </p-accordion>
             <ng-template pTemplate="footer">
                 <button pButton (click)="goToLyric()" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLyricCode()" type="button" label="View Code" icon="pi pi-angle-right"></button>
+
             </ng-template>
         </p-card>
     </div>
     <div class="col center-card">
-        <p-card header="Baby AI Monitor" subheader="Spring 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p-card header="REAL MGMT" subheader="Summer 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/real-mgmt.png" style="max-width:60%; width:100%;" class="center">
+            </ng-template>
+            <p> Manage your real estate properties with this online tool! </p>
+
+            <p-accordion>
+                <p-accordionTab header="Example Inputs">
+                    <p> Manager </p>
+                    <ul>
+                        <li>Username: inewton</li>
+                        <li>Password: 123</li>
+                    </ul>
+                    <p> Tenant </p>
+                    <ul>
+                        <li>Username: cdarwin</li>
+                        <li>Password: 123</li>
+                    </ul>
+                    <p> Contractor </p>
+                    <ul>
+                        <li>Username: kjenson</li>
+                        <li>Password: 123</li>
+                    </ul>
+                </p-accordionTab>
+                <p-accordionTab header="Tags">
+                    <ul>
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>SQL</li>
+                        <li>REST API</li>
+                        <li>Hosted on AWS</li>
+                    </ul>
+                </p-accordionTab>
+            </p-accordion>
+            <ng-template pTemplate="footer">
+                <button pButton (click)="goToRealMgmt()" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToRealMgmtCode()" type="button" label="View Code" icon="pi pi-angle-right"></button>
+            </ng-template>
+        </p-card>
+    </div>
+    <div class="col center-card">
+        <p-card header="Baby AI Monitor" subheader="Fall 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
             <ng-template pTemplate="header">
                 <img alt="Card" src="assets/baby-ai-monitor.png" style="max-width:60%; width:100%;" class="center">
             </ng-template>
             <p> Monitor your baby from any device! Get real time updates in and make sure your baby is safe from anywhere in the world. </p>
+            <p-accordion>
+                <p-accordionTab header="Tags">
+                    <ul>
+                        <li>Flask</li>
+                        <li>OpenCV</li>
+                        <li>Computer Vision</li>
+                        <li>Python</li>
+                    </ul>
+                </p-accordionTab>
+            </p-accordion>
             <ng-template pTemplate="footer">
                 <button pButton (click)="goToBaby()" type="button" label="Read More" icon="pi pi-angle-right"></button>
             </ng-template>
