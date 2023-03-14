@@ -1,7 +1,46 @@
 <!-- <p>projects works!</p> -->
 <!-- Lyricretriever-env.eba-ftppkhi3.us-east-2.elasticbeanstalk.com  -->
-<!-- <button pButton (click)="goToLyric()" type="button" icon="pi pi-volume-up" class="p-button-rounded" style="margin: 10px;"></button> -->
+<!-- <button pButton (click)="goToLink('http://3.20.71.118:5000/')" type="button" icon="pi pi-volume-up" class="p-button-rounded" style="margin: 10px;"></button> -->
+<p-card>
+    <div class="text-center">
+        <h1>
+            Projects
+        </h1>
+        <p>
+            Welcome to my projects page! The code for these projects can be found on my github
+        </p>
+        <button pButton (click)="goToLink('https://github.com/zacharylaguna')" label="GitHub" type="button" icon="pi pi-github" class="p-button-rounded" style="margin: 10px;"></button>
+    </div>
+</p-card>
+
+<p></p>
+
 <div class="grid">
+    <div class="col center-card">
+        <p-card header="GordoBot" subheader="Spring 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/gordobot.png" style="max-width:60%; width:100%;" class="center">
+            </ng-template>
+            <p> GordoBot is a revolutionary new robot designed to simplify the process of ingredient dispensing. With its advanced technology and intuitive interface, GordoBot can dispense ingredients quickly and accurately, making it the perfect addition to any kitchen or laboratory. Using the API built with Spring and the user interface built with Angular, users can easily interact with GordoBot and customize its settings to meet their specific needs. Whether you're a professional chef, a food scientist, or just someone who loves to cook, GordoBot is the ideal tool for simplifying the process of ingredient dispensing and improving the quality of your recipes. </p>
+            <p-accordion>
+                <p-accordionTab header="Tags">
+                    <ul>
+                        <li>Project Management</li>
+                        <li>Teamwork</li>
+                        <li>Angular</li>
+                        <li>Spring API </li>
+                        <li>Raspberry Pi</li>
+                        <li>Python</li>
+                        <li>Robotics</li>
+                    </ul>
+                </p-accordionTab>
+            </p-accordion>
+            <ng-template pTemplate="footer">
+                <button pButton (click)="goToLink('https://powerful-dime-53d.notion.site/GordoBot-9699aee0c6364ba8a0b365d361d71837')" type="button" label="Docs" icon="pi pi-book"></button>
+                <button pButton (click)="goToLink('https://github.com/zacharylaguna/gordobot')" type="button" label="" icon="pi pi-github"></button>
+            </ng-template>
+        </p-card>
+    </div>
     <div class="col center-card">
         <p-card header="Lyric Retriever" subheader="Spring 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
             <ng-template pTemplate="header">
@@ -27,8 +66,8 @@
                 </p-accordionTab>
             </p-accordion>
             <ng-template pTemplate="footer">
-                <button pButton (click)="goToLyric()" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
-                <button pButton (click)="goToLyricCode()" type="button" label="View Code" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLink('http://3.20.71.118:5000/')" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLink('https://github.com/zacharylaguna/lyric-retriever')" type="button" label="" icon="pi pi-github"></button>
 
             </ng-template>
         </p-card>
@@ -69,8 +108,9 @@
                 </p-accordionTab>
             </p-accordion>
             <ng-template pTemplate="footer">
-                <button pButton (click)="goToRealMgmt()" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
-                <button pButton (click)="goToRealMgmtCode()" type="button" label="View Code" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLink('http://3.17.248.106:3000/')" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLink('https://powerful-dime-53d.notion.site/Real-MGMT-d9d4c83d92214c9f82fa124dfec9f235')" type="button" label="Docs" icon="pi pi-book"></button>
+                <button pButton (click)="goToLink('https://github.com/zacharylaguna/real-mgmt')" type="button" label="" icon="pi pi-github"></button>
             </ng-template>
         </p-card>
     </div>
@@ -91,8 +131,11 @@
                 </p-accordionTab>
             </p-accordion>
             <ng-template pTemplate="footer">
-                <button pButton (click)="goToBaby()" type="button" label="Read More" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLink('https://drive.google.com/drive/folders/11k6lYF7ScDIxzzvbVaWI3ZNNwwv0Py6N?usp=sharing')" type="button" label="Docs" icon="pi pi-book"></button>
+                <button pButton (click)="goToLink('https://github.com/zacharylaguna/baby-ai-monitor')" type="button" label="" icon="pi pi-github"></button>
             </ng-template>
         </p-card>
     </div>
 </div>
+
+<p style="visibility: hidden;">Zachary Laguna</p>

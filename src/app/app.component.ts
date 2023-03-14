@@ -51,7 +51,7 @@ export class AppComponent {
     ];
   }
 
-  goToGitHub() {
-    this.document.location.href = 'https://github.com/zacharylaguna';
+  goToLink(url: string){
+    window.open(url, "_blank");
   }
 }
