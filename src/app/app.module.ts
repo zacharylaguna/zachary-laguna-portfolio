@@ -17,6 +17,8 @@ import {AccordionModule} from 'primeng-lts/accordion';
 import {ChartModule} from 'primeng-lts/chart'
 import {ProgressBarModule} from 'primeng-lts/progressbar';
 import {TooltipModule} from 'primeng-lts/tooltip';
+import {KnobModule} from 'primeng-lts/knob';
+
 
 @NgModule({
   declarations: [
