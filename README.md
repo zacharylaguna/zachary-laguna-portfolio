@@ -1,4 +1,4 @@
-To add to AWS S3 bucket
+## To add to AWS S3 bucket
 ng build
 all contents of portfolio-v2 are uploaded (no folder)
 add files -> all first layer files
