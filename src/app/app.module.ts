@@ -17,6 +17,9 @@ import {AccordionModule} from 'primeng-lts/accordion';
 import {ChartModule} from 'primeng-lts/chart'
 import {ProgressBarModule} from 'primeng-lts/progressbar';
 import {TooltipModule} from 'primeng-lts/tooltip';
+import {TimelineModule} from 'primeng-lts/timeline';
+
+import { FormsModule } from '@angular/forms';
 import {KnobModule} from 'primeng-lts/knob';
 
 
@@ -39,7 +42,10 @@ import {KnobModule} from 'primeng-lts/knob';
     AccordionModule,
     ChartModule,
     ProgressBarModule,
-    TooltipModule
+    TooltipModule,
+    TimelineModule,
+    FormsModule,
+    KnobModule
   ],
   providers: [],
   bootstrap: [AppComponent]
