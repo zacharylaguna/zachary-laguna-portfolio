@@ -16,21 +16,21 @@ export class ExperiencesComponent implements OnInit {
 
   ngOnInit(): void {
     this.fujitsu_swe = {
-      labels: ['Docker', 'Redis', 'C++', 'Angular (Frontend)', 'Flask (Python)', 'AWS'],
+      labels: ['Linux & Docker', 'Cybersecurity', 'C++', 'Angular', 'Python', 'CI/CD'],
       datasets: [
         {
-          data: [40, 20, 10, 10, 10, 10],
+          data: [10, 30, 25, 2, 25, 8],
           backgroundColor: [ // https://brandcolors.net/
             "#0db7ed",
-            "#d82c20",
+            "#004385",
             "#800080",
             "#b52e31",
             "#ffde57",
-            "#ff9900"
+            "#ff9900",
           ],
           hoverBackgroundColor: [ // https://www.w3schools.com/colors/colors_picker.asp
             "#aadcee", // 80% white
-            "#f2aba6",
+            "#99ccff",
             "#ff99ff",
             "#eaaeaf",
             "#ffeb99",

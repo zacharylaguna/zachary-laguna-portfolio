@@ -19,8 +19,8 @@ export class AppComponent {
   ngOnInit() {
     this.items = [
       {
-        label: 'Zachary Laguna',
-        // icon: 'pi pi-fw pi-home',
+        // label: 'Zachary Laguna',
+        icon: 'pi pi-fw pi-home',
         url: '/home', // necessary for link changer (.active in app.component.scss)
         routerLink: '/home'
       },

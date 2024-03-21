@@ -1,3 +1,4 @@
+<div style="width: 50%; margin: auto;">
 <p-card>
     <div class="text-center">
         <h1>
@@ -6,9 +7,9 @@
     </div>
 </p-card>
 
-<p></p>
+<!-- <p></p> -->
 
-<div class="text-center">
+<!-- <div class="text-center">
     <h3 style="text-align: center;">I have completed my Bachelor of Science in Computer Engineering from Texas A&M</h3>
 </div>
 
@@ -65,4 +66,32 @@
             </p>
         </div>
     </div>
+</div> -->
+</div> 
+
+<p></p>
+
+
+<div class="card" style="width: 70%; margin: auto;">
+    <p-card><h3 style="text-align: center;">Timeline</h3></p-card>
+    <p-timeline [value]="events1" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="marker" let-event>
+            <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
+                <i [ngClass]="event.icon"></i>
+            </span>
+        </ng-template>
+        <ng-template pTemplate="content" let-event>
+            <p-card [header]="event.status" [subheader]="event.date">
+                <img *ngIf="event.image" [src]="'assets/showcase/images/demo/product/' + event.image" [alt]="event.name" width="200" class="p-shadow-2" />
+                <p>{{ event.text }}</p>
+                <!-- <button pButton label="Read more" class="p-button-text"></button> -->
+            </p-card>
+        </ng-template>
+    </p-timeline>
 </div>
+
+<p></p>
+
+<!-- <div style="width: 50%; margin: auto;"> -->
+    <!-- <p-card><h3 style="text-align: center;">Accolades</h3></p-card> -->
+<!-- </div> -->
