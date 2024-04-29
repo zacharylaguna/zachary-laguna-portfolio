@@ -4,6 +4,11 @@ all contents of portfolio-v2 are uploaded (no folder)
 add files -> all first layer files
 add folder -> all first layer folder 
 
+# security issues = unable to compile?
+export NODE_OPTIONS=--openssl-legacy-provider
+
+
+
 # PortfolioV2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.

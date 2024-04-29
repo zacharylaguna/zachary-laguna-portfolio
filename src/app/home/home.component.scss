@@ -18,7 +18,7 @@
     // transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);
 }
 .signature-path{
-    stroke:rgb(0, 0, 0);/* color of the signature */
+    stroke:rgb(255, 255, 255);/* color of the signature */
     stroke-width:1px;/* need to be more than 0 otherwise you can't see it */
     animation: demodraw 2s ease-in infinite; /* name of the keyframe, duration, easing function ( slow start fast ending ), repeat infinietly */
     stroke-dasharray: 380.67059326171875;/* value returned by var path = document.querySelector('path');
