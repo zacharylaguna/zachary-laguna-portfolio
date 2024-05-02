@@ -22,6 +22,8 @@ import {TimelineModule} from 'primeng-lts/timeline';
 import { FormsModule } from '@angular/forms';
 import {KnobModule} from 'primeng-lts/knob';
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import {KnobModule} from 'primeng-lts/knob';
     AcademicsComponent,
     ExperiencesComponent,
     AboutmeComponent,
-    ProjectsComponent
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import {KnobModule} from 'primeng-lts/knob';
     TooltipModule,
     TimelineModule,
     FormsModule,
-    KnobModule
+    KnobModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

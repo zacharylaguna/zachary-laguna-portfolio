@@ -7,7 +7,7 @@
             Projects
         </h1>
         <p>
-            Welcome to my projects page! The code for these projects can be found on my github. All live demos are hosted on AWS Cloud.
+            Welcome to my projects page! The code for these projects can be found on my GitHub. All live demos are hosted on AWS Cloud.
         </p>
         <button pButton (click)="goToLink('https://github.com/zacharylaguna')" label="GitHub" type="button" icon="pi pi-github" class="p-button-rounded" style="margin: 10px;"></button>
     </div>
@@ -16,12 +16,46 @@
 <p></p>
 
 <div class="grid">
-    <div class="col center-card">
-        <p-card header="GordoBot" subheader="Spring 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+    <div class="col-12">
+        <button *ngIf="!responseData" class="center" pButton (click)="sendGetRequest()" type="button" label="Start AWS Resources" icon="pi pi-play"></button>
+        <button *ngIf="responseData" class="center" pButton type="button" label="AWS Resources Started for 2 hours!" icon="pi pi-check"></button>
+    </div>
+    <h2 class="col-12 text-center">New Projects</h2>
+    <div class="col-12 center-card">
+        <p-card header="VirtualDoc" subheader="Spring 2024" [style]="{width: '360px', height: '800px'}" styleClass="p-card-shadow">
             <ng-template pTemplate="header">
-                <img alt="Card" src="assets/gordobot.png" style="max-width:60%; width:100%;" class="center">
+                <div style="height:360px">
+                    <img alt="Card" src="assets/virtualdoc.png" style="max-width:60%; width:100%;" class="center">
+                </div>
             </ng-template>
-            <p> GordoBot is an innovative robot designed for efficient ingredient dispensing in kitchens and laboratories. Its advanced technology and user-friendly interface allow users to interact and customize settings easily using the Spring API and Angular-based user interface. Whether you're a professional chef, food scientist, or a cooking enthusiast, GordoBot simplifies ingredient dispensing and enhances recipe quality. </p>
+            <p> Seeking fast, personalized medical advice? Meet VirtualDoc, your virtual AI doctor. Chat about your symptoms and get instant recommendations for better health. </p>
+            <p-accordion>
+                <p-accordionTab header="Skills">
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Information Retrieval</li>
+                        <li>NextJS/React</li>
+                        <li>Python</li>
+                        <li>AWS Cloud</li>
+                    </ul>
+                </p-accordionTab>
+            </p-accordion>
+            <ng-template pTemplate="footer">
+                <button pButton (click)="goToLink('https://virtualdoc.info/interact')" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLink('https://sites.google.com/tamu.edu/virtualdoc')" type="button" label="Docs" icon="pi pi-book"></button>
+                <button pButton (click)="goToLink('https://github.com/zacharylaguna/virtualdoc')" type="button" label="" icon="pi pi-github"></button>
+            </ng-template>
+        </p-card>
+    </div>
+    <h2 class="col-12 text-center">Old Projects</h2>
+    <div class="col center-card">
+        <p-card header="GordoBot" subheader="Spring 2022" [style]="{width: '360px', height: '800px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <div style="height:360px">
+                    <img alt="Card" src="assets/gordobot.png" style="max-width:60%; width:100%;" class="center">
+                </div>
+            </ng-template>
+            <p> Hungry? GordoBot is an innovative robot designed for efficient ingredient dispensing in kitchens and laboratories. Whether you're a professional chef, food scientist, or a cooking enthusiast, GordoBot simplifies ingredient dispensing and enhances recipe quality. </p>
             <p-accordion>
                 <p-accordionTab header="Skills">
                     <ul>
@@ -42,9 +76,11 @@
         </p-card>
     </div>
     <div class="col center-card">
-        <p-card header="Lyric Retriever" subheader="Spring 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p-card header="Lyric Retriever" subheader="Spring 2022" [style]="{width: '360px', height: '800px'}" styleClass="p-card-shadow">
             <ng-template pTemplate="header">
-                <img alt="Card" src="assets/music-note.png" style="max-width:60%; width:100%;" class="center">
+                <div style="height:360px">
+                    <img alt="Card" src="assets/music-note.png" style="max-width:60%; width:100%;" class="center">
+                </div>
             </ng-template>
             <p> Do you have a song stuck in your head? One where the name is at the tip of your tongue? Find it using this lyric tool! Type the most prominent lyrics within a song and find the title (uses an outdated dataset)</p>
             <p-accordion>
@@ -73,9 +109,11 @@
         </p-card>
     </div>
     <div class="col center-card">
-        <p-card header="Real Mgmt" subheader="Summer 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p-card header="Real Mgmt" subheader="Summer 2022" [style]="{width: '360px', height: '800px'}" styleClass="p-card-shadow">
             <ng-template pTemplate="header">
-                <img alt="Card" src="assets/real-mgmt.png" style="max-width:60%; width:100%;" class="center">
+                <div style="height:360px">
+                    <img alt="Card" src="assets/real-mgmt.png" style="max-width:60%; width:100%;" class="center">
+                </div>
             </ng-template>
             <p> Manage your real estate properties with this online tool! </p>
 
@@ -115,9 +153,11 @@
         </p-card>
     </div>
     <div class="col center-card">
-        <p-card header="Baby AI Monitor" subheader="Fall 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p-card header="Baby AI Monitor" subheader="Fall 2022" [style]="{width: '360px', height: '800px'}" styleClass="p-card-shadow">
             <ng-template pTemplate="header">
+                <div style="height:360px">
                 <img alt="Card" src="assets/baby-ai-monitor.png" style="max-width:60%; width:100%;" class="center">
+                </div>
             </ng-template>
             <p> Monitor your baby from any device! Get real time updates in and make sure your baby is safe from anywhere in the world. </p>
             <p-accordion>

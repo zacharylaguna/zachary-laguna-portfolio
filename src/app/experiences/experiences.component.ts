@@ -19,7 +19,7 @@ export class ExperiencesComponent implements OnInit {
       labels: ['Linux & Docker', 'Cybersecurity', 'C++', 'Angular', 'Python', 'CI/CD'],
       datasets: [
         {
-          data: [10, 30, 25, 2, 25, 8],
+          data: [10, 40, 20, 2, 20, 8],
           backgroundColor: [ // https://brandcolors.net/
             "#0db7ed",
             "#004385",
